@@ -66,5 +66,24 @@ app.get('/entries', (req, res) => {
 
 
 // question 3) 
-// error handling, authentication and validation, error handling are the import factores that can took into consideration.
-// we can use google o.auth 2.0 for 3rd party authemtication purpose.
+error handling, authentication and validation, error handling are the import factores that can took into consideration.
+we can use google o.auth 2.0 for 3rd party authemtication purpose.
+
+
+THEORITICAL CHALLENGES:
+
+1:
+To tackle the challenge, I would first parse the CSV input to extract the values and formulas. 
+Then I would use a library like pandas or openpyxl to read the data and evaluate the formulas. 
+The final step would be to write the results to a new CSV file.
+
+2:
+I would check for errors such as invalid formulas, missing data, and circular references. 
+I would also check for cases where the formula references a cell that does not exist, and for 
+cases where the formula is not properly formatted.
+
+3:
+A user might break the code by providing a CSV file that is not properly formatted.
+such as missing data, or by providing a formula that is not properly formatted. 
+Additionally, if the user provides a formula that references a cell that does not exist, this would 
+also break the code.
